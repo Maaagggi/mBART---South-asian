@@ -58,7 +58,7 @@ if __name__ == "__main__":
 
             # Use translated_text as input to the chatbot function
             chatbot_response = chatbot_reply(translated_text)
-            print(f"Chatbot's reply in English: {chatbot_response}")
+            # print(f"Chatbot's reply in English: {chatbot_response}")
 
             # Translate the chatbot's reply back to the original language
             translated_reply, _ = translate_mbart(chatbot_response, 'en_XX', source_language_code,
