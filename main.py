@@ -1,7 +1,6 @@
 from chatbot import generate_response
 import warnings
 import time
-import nltk
 from langdetect import detect, DetectorFactory
 from langdetect.lang_detect_exception import LangDetectException
 from translation import translate_mbart, supported_languages
@@ -20,13 +19,6 @@ language_names = {
 }
 
 
-def setup_nltk():
-    try:
-        nltk.data.find('tokenizers/punkt')
-    except LookupError:
-        nltk.download('punkt')
-
-
 def detect_language(text):
     try:
         detected_lang = detect(text)
@@ -36,7 +28,6 @@ def detect_language(text):
 
 
 if __name__ == "__main__":
-    setup_nltk()
 
     while True:
         start_time = time.time()  # Start overall execution time measurement
@@ -65,7 +56,7 @@ if __name__ == "__main__":
             if translated_text:
                 print(f"Translated text: {translated_text}")
 
-                # Chatbot response using Blenderbot
+                # Chatbot response using GPT
                 chatbot_start = time.time()
                 chatbot_response = generate_response(translated_text)
                 chatbot_end = time.time()
