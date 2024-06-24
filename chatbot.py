@@ -1,9 +1,8 @@
 import os
 import warnings
+
 import openai
 from dotenv import load_dotenv
-
-from openai import ChatCompletion
 
 # Load environment variables from .env file
 load_dotenv()
@@ -33,7 +32,6 @@ def get_gpt_response(prompt):
         temperature=0.7,  # Adjust the randomness of the generated text (0 for deterministic)
     )
     return response.choices[0].message["content"].strip()  # Extract the generated text
-
 
 
 def generate_response(user_input):
