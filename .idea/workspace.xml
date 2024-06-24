@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ae11bb5-4818-47a1-8c69-82e034efa2f1" name="Changes" comment="workspace.xml update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translation.py" beforeDir="false" afterPath="$PROJECT_DIR$/translation.py" afterDir="false" />
-    </list>
+    <list default="true" id="3ae11bb5-4818-47a1-8c69-82e034efa2f1" name="Changes" comment="added logging for the model generated output." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,12 +117,21 @@
       <option name="project" value="LOCAL" />
       <updated>1718698782154</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added logging for the model generated output.">
+      <option name="closed" value="true" />
+      <created>1719212566876</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719212566876</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="workspace.xml update" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml update" />
+    <MESSAGE value="added logging for the model generated output." />
+    <option name="LAST_COMMIT_MESSAGE" value="added logging for the model generated output." />
   </component>
 </project>
