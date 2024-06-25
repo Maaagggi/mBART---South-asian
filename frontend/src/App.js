@@ -1,58 +1,60 @@
-import React, { useState } from 'react';
-import './styles/styles.css';
+import React, { useState } from "react";
+
+import { footer, welcomeText } from "./utils/constants";
+
+import "./App.css";
 
 function App() {
+  // States below
   const [messages, setMessages] = useState([]);
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
 
-  const sendMessage = async () => {
-    if (!input.trim()) return;
+  const sendUserMessage = () => {
+    if (input.trim()) {
+      setMessages([...messages, { text: input, sender: "user" }]);
+      setInput("");
 
-    const newMessage = { sender: 'user', content: input };
-    setMessages([...messages, newMessage]);
-    setInput('');
+      setTimeout(() => {
+        setMessages((prevMessages) => [
+          ...prevMessages,
+          // Dummy text response from the bot when we type something
+          { text: "This is a response from the chatbot.", sender: "bot" },
+        ]);
+      }, 1000);
+    }
+  };
 
-    try {
-      const response = await fetch('http://localhost:8000/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: input })
-      });
-      const data = await response.json();
-      const botMessage = { sender: 'bot', content: data.reply };
-      setMessages([...messages, newMessage, botMessage]);
-    } catch (error) {
-      console.error('Error:', error);
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      return sendUserMessage();
     }
   };
 
   return (
-    <div className="App">
+    <div>
+      <h1 className="welcome-txt">Welcome to CaliBot</h1>
       <div className="chat-container">
-        <div className="chat-header">
-          <div className="avatar"></div>
-          <div className="chat-info">
-            <div className="name">Jessica Cowles</div>
-            <div className="status">We're online</div>
-          </div>
-        </div>
-        <div className="chat-box">
-          {messages.map((msg, index) => (
-            <div key={index} className={`message ${msg.sender}`}>
-              {msg.content}
+        <div className="chat-interface">
+          {messages.map((message, index) => (
+            <div
+              key={index}
+              className={`message ${
+                message.sender === "user" ? "user" : "bot"
+              }`}
+            >
+              {message.text}
             </div>
           ))}
         </div>
-        <div className="chat-input">
-          <div className="input-container">
-            <input
-              type="text"
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              placeholder="Enter your message..."
-            />
-            <button onClick={sendMessage}>Send</button>
-          </div>
+        <div className="input-container">
+          <input
+            type="text"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyPress={handleKeyPress}
+            placeholder={welcomeText}
+          />
+          <button onClick={() => sendUserMessage()}>{footer.buttonName}</button>
         </div>
       </div>
     </div>
