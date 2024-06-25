@@ -1,7 +1,6 @@
 from transformers import BlenderbotForConditionalGeneration, BlenderbotTokenizer
 import warnings
 
-# Suppress specific warnings
 warnings.filterwarnings("ignore", message="Can't initialize NVML")
 warnings.filterwarnings("ignore", category=UserWarning, module='torch')
 

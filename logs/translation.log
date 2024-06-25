@@ -1,0 +1,20 @@
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /facebook/mbart-large-50-many-to-many-mmt/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /facebook/mbart-large-50-many-to-many-mmt/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /facebook/mbart-large-50-many-to-many-mmt/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /facebook/mbart-large-50-many-to-many-mmt/resolve/main/generation_config.json HTTP/1.1" 200 0
+DEBUG:translation:Translated text: </s>en_XX How are you?</s>
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /facebook/mbart-large-50-many-to-many-mmt/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /facebook/mbart-large-50-many-to-many-mmt/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /facebook/mbart-large-50-many-to-many-mmt/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /facebook/mbart-large-50-many-to-many-mmt/resolve/main/generation_config.json HTTP/1.1" 200 0
+DEBUG:translation:Translated text: </s>ta_IN நான் நல்ல நிலையில் இருக்கிறேன், உங்களுக்கு நன்றி.</s>
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /facebook/mbart-large-50-many-to-many-mmt/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /facebook/mbart-large-50-many-to-many-mmt/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /facebook/mbart-large-50-many-to-many-mmt/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /facebook/mbart-large-50-many-to-many-mmt/resolve/main/generation_config.json HTTP/1.1" 200 0
+DEBUG:translation:Translated text: </s>en_XX How are you?</s>
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /facebook/mbart-large-50-many-to-many-mmt/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /facebook/mbart-large-50-many-to-many-mmt/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /facebook/mbart-large-50-many-to-many-mmt/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /facebook/mbart-large-50-many-to-many-mmt/resolve/main/generation_config.json HTTP/1.1" 200 0
+DEBUG:translation:Translated text: </s>ta_IN நான் நல்ல நிலையில் இருக்கிறேன், உங்களுக்கு நன்றி.</s>

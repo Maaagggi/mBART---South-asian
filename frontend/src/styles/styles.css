@@ -1,0 +1,99 @@
+/* styles/styles.css */
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #101010; /* Dark background color */
+  color: #ffffff; /* White text color */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background-color: #1f1f1f; /* Darker background for header */
+  padding: 20px 0;
+}
+
+.App-header h1 {
+  font-size: 2.5rem;
+  color: #4caf50; /* Green color for heading */
+  margin-bottom: 10px;
+}
+
+.App-header p {
+  font-size: 1.2rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#chat-interface {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: #1f1f1f; /* Dark background for chat interface */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 20px;
+}
+
+#chat-box {
+  height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.message.user {
+  background-color: #4caf50; /* Green background for user messages */
+  color: #ffffff;
+  text-align: right;
+}
+
+.message.bot {
+  background-color: #333; /* Dark background for bot messages */
+  color: #ffffff;
+}
+
+#disclaimer {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+input[type='text'] {
+  width: calc(100% - 70px);
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  width: 60px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50; /* Green button */
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
