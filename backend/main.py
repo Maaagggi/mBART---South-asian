@@ -1,10 +1,10 @@
-from backend.chatbot import generate_response
+from chatbot import generate_response
 import warnings
 import time
 import nltk
 from langdetect import detect, DetectorFactory
 from langdetect.lang_detect_exception import LangDetectException
-from backend.translation import translate_mbart, supported_languages
+from translation import translate_mbart, supported_languages
 
 # Suppress specific warnings
 warnings.filterwarnings("ignore", message="Can't initialize NVML")
