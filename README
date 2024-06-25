@@ -1,50 +1,46 @@
-## **mBART for Machine Translation**
-
+mBART for Machine Translation
 This project leverages the power of the mBART (multilingual BART) model for machine translation tasks, with a potential focus on South Asian languages.
 
-**What it Does**
+What it Does
 
-* **Seamless Text Translation:** Effortlessly translate text between various languages, potentially including South Asian languages supported by the mBART model.
-* **Multilingual Power (Optional):**  The mBART model, pre-trained on a massive dataset of text and code, enables translation between many languages, including potentially:
-    * Hindi (hi)
-    * Urdu (ur)
-    * Bengali (bn)
-    * Tamil (ta)
-    * Marathi (mr)
-    * Sinhala (si)
-* **Interactive Chatbot Interface (Optional):** The project might include a user-friendly chatbot interface for interacting with the translation functionality (if `chatbot.py` exists).
+Seamless Text Translation: Effortlessly translate text between various languages, potentially including South Asian languages supported by the mBART model.
+Multilingual Power (Optional): The mBART model, pre-trained on a massive dataset of text and code, enables translation between many languages, including potentially:
+Hindi (hi)
+Urdu (ur)
+Bengali (bn)
+Tamil (ta)
+Marathi (mr)
+Sinhala (si)
+Interactive Chatbot Interface (Optional): The project might include a user-friendly chatbot interface for interacting with the translation functionality (if chatbot.py exists).
+Getting Started
 
-**Getting Started**
+Prerequisites:
 
-1. **Prerequisites:**
+Python 3.x ([link to Python download])
+Libraries specified in requirements.txt (You can install them using pip install -r requirements.txt)
+Transformers library ([link to Transformers library])
+Installation:
 
-     * Python 3.x ([link to Python download])
-     * Libraries specified in `requirements.txt` (You can install them using `pip install -r requirements.txt`)
-     * Transformers library ([link to Transformers library])
+Assuming you have Git installed, follow these steps to clone this repository:
 
-2. **Installation:**
+Bash
+git clone https://github.com/<repository_owner>/mBART.git
+Use code with caution.
+content_copy
+Replace <repository_owner> with the actual owner of the repository you obtained the code from.
 
-   Assuming you have Git installed, follow these steps to clone this repository:
+Running the Project:
 
-   ```bash
-   git clone https://github.com/<repository_owner>/mBART.git
-   ```
+Execute the following command in the project directory to launch the application:
 
-   Replace `<repository_owner>` with the actual owner of the repository you obtained the code from.
+Bash
+python main.py
+Use code with caution.
+content_copy
+This command utilizes the main.py script. Refer to the project's code or logs for specific functionalities provided.
 
-3. **Running the Project:**
+Project Structure
 
-   Execute the following command in the project directory to launch the application:
-
-   ```bash
-   python main.py
-   ```
-
-   This command utilizes the `main.py` script. Refer to the project's code or logs for specific functionalities provided.
-
-**Project Structure**
-
-```
 mBART/
 ├── backend/  # Potential submodule containing backend code (if applicable)
 ├── app.log  # Log file for the application
@@ -57,19 +53,3 @@ mBART/
 ├── requirements.txt  # List of required Python libraries
 ├── translation.log  # Log file for translation processes
 └── translation.py  # File for translation functionality using mBART
-```
-
-**Further Exploration**
-
-* **Examine `main.py` to understand how it interacts with other files and utilizes the mBART model.** (Use a slightly smaller font size for body text)
-* **Explore `chatbot.py` to learn about the chatbot interface for user interaction and translation integration.** (Use a slightly smaller font size for body text)
-* **Review `requirements.txt` to identify the necessary dependencies.** (Use a slightly smaller font size for body text)
-* **Investigate `Makefile` to understand the defined automated tasks.** (Use a slightly smaller font size for body text)
-
-**Contributing**
-
-We welcome contributions to this project! Feel free to fork the repository, make changes, and submit pull requests.
-
-**License**
-
-This project is licensed under the MIT License ([link to MIT License]). See the `LICENSE` file for details.
