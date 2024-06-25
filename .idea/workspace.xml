@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ae11bb5-4818-47a1-8c69-82e034efa2f1" name="Changes" comment="added logging for the model generated output.">
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/chatbot.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/styles/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3ae11bb5-4818-47a1-8c69-82e034efa2f1" name="Changes" comment="added frontend elements,logging.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translation.py" beforeDir="false" afterPath="$PROJECT_DIR$/translation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,13 +150,22 @@
       <option name="project" value="LOCAL" />
       <updated>1719216169589</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added frontend elements,logging.">
+      <option name="closed" value="true" />
+      <created>1719297724722</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719297724722</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="workspace.xml update" />
     <MESSAGE value="added logging for the model generated output." />
-    <option name="LAST_COMMIT_MESSAGE" value="added logging for the model generated output." />
+    <MESSAGE value="added frontend elements,logging." />
+    <option name="LAST_COMMIT_MESSAGE" value="added frontend elements,logging." />
   </component>
 </project>
