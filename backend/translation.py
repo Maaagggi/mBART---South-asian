@@ -16,11 +16,13 @@ supported_languages = {
     'ml': 'ml_IN', 'mr': 'mr_IN', 'ta': 'ta_IN', 'te': 'te_IN', 'ur': 'ur_PK'
 }
 
+
 def setup_nltk():
     try:
         nltk.data.find('tokenizers/punkt')
     except LookupError:
         nltk.download('punkt')
+
 
 def detect_language(text):
     try:
@@ -28,6 +30,7 @@ def detect_language(text):
         return detected_lang
     except LangDetectException:
         return None
+
 
 def translate_mbart(text, source_lang, target_lang='en_XX', max_length=1024, batch_size=8):
     try:
